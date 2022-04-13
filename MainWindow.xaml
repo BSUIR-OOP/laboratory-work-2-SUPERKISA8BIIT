@@ -6,5 +6,12 @@
         xmlns:local="clr-namespace:paint"
         mc:Ignorable="d"
         Title="Paint" Height="450" Width="800">
-    <Grid x:Name="grid"/>
+
+    <DockPanel LastChildFill="True">
+        <StackPanel x:Name="buttons" Width="74">
+        </StackPanel>
+        <Grid x:Name="grid">
+            <Image Source="figures/back.jpg" MouseLeftButtonUp="Grid_MouseLeftButtonUp" Name="image" />
+        </Grid>
+    </DockPanel>
 </Window>
