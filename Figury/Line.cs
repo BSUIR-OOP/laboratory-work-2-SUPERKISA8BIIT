@@ -10,5 +10,6 @@ namespace paint
     {
         public override string fileName => "line.png";
         public Line(int x, int y, int width, int height) : base(x, y, width, height) { }
+        public static Figure LineDelegate(int x, int y) => new Line(x, y, 300, 150);
     }
 }
