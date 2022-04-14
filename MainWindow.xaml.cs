@@ -36,15 +36,7 @@ namespace paint
             myBitmapImage.DecodePixelWidth = 200;
             myBitmapImage.EndInit();
             InitializeComponent();
-            var delList = new List<FirstDelegate>() 
-            {
-                new FirstDelegate(Circle.CircleDelegate),
-                new FirstDelegate(Ellipse.EllipseDelegate),
-                new FirstDelegate(Line.LineDelegate),
-                new FirstDelegate(Rhombus.RhombusDelegate),
-                new FirstDelegate(Square.SquareDelegate),
-                new FirstDelegate(Triangle.TriangleDelegate)
-            };
+
             Dictionary<string, FirstDelegate> dict = new Dictionary<string, FirstDelegate>()
             {
                 {"Circle", new FirstDelegate(Circle.CircleDelegate) },
